@@ -2,17 +2,16 @@
 <package>
   <metadata>
     <id>Wilgnne.GraphLib</id>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
     <authors>Wilgnne K. B. Alencar</authors>
     <description>Este pacote oferece implementações de algoritomos de busca, e arvores geradoras minimas em grafos para aplicações .NET</description>
     <language>pt-BR</language>
     <projectUrl>http://https://github.com/Wilgnne/GraphLib</projectUrl>
-    <license type="file">LICENSE.txt</license>
+    <licenseUrl>http://https://github.com/Wilgnne/GraphLib</licenseUrl>
   </metadata>
   <files>
-    <file src="bin\Release\netstandard2.0\GraphLib.dll" target="lib/Wilgnne.GraphLib" />
-    <file src="bin\Release\netstandard2.0\GraphLib.deps.json" target="lib/Wilgnne.GraphLib" />
-    <file src="bin\Release\netstandard2.0\GraphLib.pdb" target="lib/Wilgnne.GraphLib" />
-    <file src="LICENSE.txt" target="lib/Wilgnne.GraphLib" />
+    <file src="bin\Release\netstandard2.0\GraphLib.dll" target="lib" />
+    <file src="bin\Release\netstandard2.0\GraphLib.deps.json" target="lib" />
+    <file src="bin\Release\netstandard2.0\GraphLib.pdb" target="lib" />
   </files>
 </package>

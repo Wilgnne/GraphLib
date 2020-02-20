@@ -103,7 +103,8 @@ namespace GraphLib
                 //Instanciamos uma aresta entre U e V com o peso passado por paramentro
                 Edge<T> UtoV = new Edge<T>(U, V, weight);
                 //Adicionamos a nova aresta a lista de adjacencia de U
-                adjList[U].Add(UtoV);
+                if (!adjList[U].Contains(UtoV))
+                    adjList[U].Add(UtoV);
 
                 //Se o grafo não for direcionado e o U e V não forem o mesmo vertice
                 if(!isDirected && !U.Equals(V))
@@ -111,7 +112,8 @@ namespace GraphLib
                     //Instanciamos uma aresta entre V e U com o peso passado por paramentro
                     Edge<T> VtoU = new Edge<T>(V, U, weight);
                     //Adicionamos a nova aresta a lista de adjacencia de V
-                    adjList[V].Add(VtoU);
+                    if (!adjList[V].Contains(VtoU))
+                        adjList[V].Add(VtoU);
                 }
             }
         }

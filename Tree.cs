@@ -36,9 +36,10 @@ namespace GraphLib
                 temp = new AdjacencyList<T>(keys, A, graph.CompareTo());
                 //Partimos da origem a procura do vertice de chegada
                 temp.BFS(uv.from.value);
+                var tempV = temp.Vertices().Find(x => x.value.Equals(uv.to.value));
                 //Caso não seja possivel alcancar o vertice
                 //Dizemos que não estao no mesmo componente
-                isSameComponent = !float.IsPositiveInfinity(uv.to.distance);
+                isSameComponent = !float.IsPositiveInfinity(tempV.distance);
                 //Caso não estejam no mesmo componente
                 if(!isSameComponent)
                 {
